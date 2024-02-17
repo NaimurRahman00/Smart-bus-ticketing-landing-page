@@ -27,20 +27,86 @@
       .font-inter {
         font-family: "Inter", sans-serif;
       }
+      .text-primary {
+        color: #1dd100;
+      }
       .custom-container {
         width: 81.25%;
+        margin: auto;
         max-width: 1440px;
       }
       /* Responsive */
-      @media only screen and (max-width: 640px)   {
+      @media only screen and (max-width: 640px) {
         .custom-container {
-            width: 95%;
+          width: 95%;
         }
       }
     </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <!-- NAVBAR -->
+      <nav>
+        <div class="custom-container">
+          <div class="navbar bg-base-100 my-6">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-raleway font-medium text-lg hover:*:text-[#1DD100]"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="font-raleway font-extrabold text-4xl text-[#030712]"
+                >P-Ticket</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 font-raleway font-medium text-lg text-[rgba(3,7,18,0.7)] hover:*:text-[#1DD100]"
+              >
+                <li><a class="hover:bg-[rgba(28,209,0,0.1)]">Home</a></li>
+                <li><a class="hover:bg-[rgba(28,209,0,0.1)]">About</a></li>
+                <li>
+                  <a class="hover:bg-[rgba(28,209,0,0.1)]">Destination</a>
+                </li>
+                <li><a class="hover:bg-[rgba(28,209,0,0.1)]">Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a
+                class="btn font-raleway font-bold text-xl text-primary bg-[rgba(28,209,0,0.1)] border-2 border-[rgba(28,209,0,0.4)] px-6 hover:border-[#1DD100] hover:bg-[rgba(28,209,0,0.2)]"
+              >
+                Bus
+                <span>
+                  <img src="./images/bus-icon.png" alt="" />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main></main>
     <footer></footer>
     <!-- SCRIPT SOURCE -->
