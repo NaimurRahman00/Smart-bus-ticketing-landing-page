@@ -27,8 +27,11 @@
       .font-inter {
         font-family: "Inter", sans-serif;
       }
-      .text-primary {
+      .custom-text-primary {
         color: #1dd100;
+      }
+      .custom-text-black {
+        color: #030712;
       }
       .custom-container {
         width: 81.25%;
@@ -77,25 +80,23 @@
                   <li><a>Search</a></li>
                 </ul>
               </div>
-              <a class="font-raleway font-extrabold text-4xl text-[#030712]"
+              <a class="font-raleway font-extrabold text-4xl custom-text-black"
                 >P-Ticket</a
               >
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul
-                class="menu menu-horizontal px-1 font-raleway font-medium text-lg text-[rgba(3,7,18,0.7)] hover:*:text-[#1DD100]"
+                class="menu menu-horizontal px-1 font-raleway font-medium text-lg text-[rgba(3,7,18,0.7)] hover:*:text-[#1DD100] space-x-7"
               >
                 <li><a class="hover:bg-[rgba(28,209,0,0.1)]">Home</a></li>
                 <li><a class="hover:bg-[rgba(28,209,0,0.1)]">About</a></li>
-                <li>
-                  <a class="hover:bg-[rgba(28,209,0,0.1)]">Destination</a>
-                </li>
+                <li><a class="hover:bg-[rgba(28,209,0,0.1)]">Destination</a></li>
                 <li><a class="hover:bg-[rgba(28,209,0,0.1)]">Search</a></li>
               </ul>
             </div>
             <div class="navbar-end">
               <a
-                class="btn font-raleway font-bold text-xl text-primary bg-[rgba(28,209,0,0.1)] border-2 border-[rgba(28,209,0,0.4)] px-6 hover:border-[#1DD100] hover:bg-[rgba(28,209,0,0.2)]"
+                class="btn font-raleway font-bold text-xl custom-text-primary bg-[rgba(28,209,0,0.1)] border-2 border-[rgba(28,209,0,0.4)] px-6 hover:border-[#1DD100] hover:bg-[rgba(28,209,0,0.2)]"
               >
                 Bus
                 <span>
@@ -106,6 +107,29 @@
           </div>
         </div>
       </nav>
+      <!-- HEADER HERO -->
+      <section class="custom-container">
+        <div
+          class="hero min-h-[550px] bg-bottom rounded-[32px]"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-fit">
+              <h1 class="text-[64px] font-raleway font-extrabold text-white">
+                End-to-End Travel with <br /><span class="custom-text-primary"
+                  >P Paribahan</span
+                >
+              </h1>
+              <p class="mb-8 max-w-2xl m-auto font-inter text-lg">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button class="bg-[#1dd100] custom-text-black font-raleway text-xl font-bold px-6 py-4 mb-20 rounded-xl border-2 border-[#1cd100] hover:bg-[rgba(210,255,215,0.8)] hover:text-[#1dd100] hover:border-2 hover:border-[#1dd100]">Buy Tickets</button>
+            </div> 
+          </div>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
