@@ -341,14 +341,22 @@
             </div>
           </div>
           <div>
-            <img class="h-full mt-[-2px]" src="./images/info-devider.png" alt="" />
+            <img
+              class="h-full mt-[-2px]"
+              src="./images/info-devider.png"
+              alt=""
+            />
           </div>
-          <div class="ps-[22px] pr-16 flex flex-col justify-center items-center">
+          <div
+            class="ps-[22px] pr-16 flex flex-col justify-center items-center"
+          >
             <div>
               <img src="./images/fare.png" alt="" />
             </div>
             <div class="mt-5">
-              <h2 class="text-gray-950 text-[32px] font-bold font-raleway text-center">
+              <h2
+                class="text-gray-950 text-[32px] font-bold font-raleway text-center"
+              >
                 550 Taka
               </h2>
               <p
@@ -356,6 +364,227 @@
               >
                 Per Seat
               </p>
+            </div>
+          </div>
+        </div>
+        <!-- Seat planning and Calculation -->
+        <div class="custom-container bg-white rounded-3xl flex">
+          <!-- seat choose -->
+          <div class="p-8">
+            <div
+              class="pr-8 border-r-2 border-dashed border-gray-950 border-opacity-70"
+            >
+              <div
+                class="pb-8 border-b-2 border-dashed border-gray-950 border-opacity-20"
+              >
+                <h2 class="text-gray-950 text-2xl font-semibold font-raleway">
+                  Select Your Seat
+                </h2>
+              </div>
+              <div
+                class="flex justify-between pt-4 pb-5 border-b-2 border-dashed border-gray-950 border-opacity-20"
+              >
+                <div class="flex gap-1">
+                  <span><img src="./images/seat-gray.png" alt="" /></span>
+                  <span
+                    class="text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                    >Available
+                  </span>
+                </div>
+                <div class="flex gap-1">
+                  <span
+                    ><img src="./images/seat-green-filled.png" alt=""
+                  /></span>
+                  <span class="text-lime-600 text-lg font-medium font-inter"
+                    >Selected
+                  </span>
+                </div>
+              </div>
+              <!-- driver seat -->
+              <div class="pt-6 flex justify-end">
+                <div
+                  class="w-[110px] h-14 bg-gray-950 bg-opacity-10 rounded-xl flex justify-center items-center"
+                >
+                  <img src="./images/steering-wheel.png" alt="" />
+                </div>
+              </div>
+              <!-- passenger seat -->
+              <div class="space-y-6 pt-6">
+                <!-- Row 1 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">A</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex justify-between gap-8 *:flex *:justify-center *:items-center"
+                  >
+                    <span>A1</span><span class="mr-8">A2</span><span>A3</span
+                    ><span>A4</span>
+                  </div>
+                </div>
+                <!-- Row 2 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">B</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>B1</span><span class="mr-8">B2</span><span>B3</span
+                    ><span>B4</span>
+                  </div>
+                </div>
+                <!-- Row 3 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">C</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>C1</span><span class="mr-8">C2</span><span>C3</span
+                    ><span>C4</span>
+                  </div>
+                </div>
+                <!-- Row 4 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">D</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>D1</span><span class="mr-8">D2</span><span>D3</span
+                    ><span>D4</span>
+                  </div>
+                </div>
+                <!-- Row 5 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">E</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>E1</span><span class="mr-8">E2</span><span>E3</span
+                    ><span>E4</span>
+                  </div>
+                </div>
+                <!-- Row 6 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">F</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>F1</span><span class="mr-8">F2</span><span>F3</span
+                    ><span>F4</span>
+                  </div>
+                </div>
+                <!-- Row 7 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">G</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>G1</span><span class="mr-8">G2</span><span>G3</span
+                    ><span>G4</span>
+                  </div>
+                </div>
+                <!-- Row 8 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">H</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>H1</span><span class="mr-8">H2</span><span>H3</span
+                    ><span>H4</span>
+                  </div>
+                </div>
+                <!-- Row 9 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">I</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>I1</span><span class="mr-8">I2</span><span>I3</span
+                    ><span>I4</span>
+                  </div>
+                </div>
+                <!-- Row 6 -->
+                <div
+                  class="flex gap-8 text-gray-950 text-opacity-50 text-lg font-medium font-inter"
+                >
+                  <span class="flex justify-center items-center w-4">J</span>
+                  <div
+                    class="*:w-[110px] *:h-14 *:bg-stone-100 *:rounded-xl flex gap-8 justify-between *:flex *:justify-center *:items-center"
+                  >
+                    <span>J1</span><span class="mr-8">J2</span><span>J3</span
+                    ><span>J4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fare calulation -->
+          <div class="py-8 pr-8 w-full">
+            <div
+              class="w-full pb-8 border-b-2 border-dashed border-gray-950 border-opacity-20"
+            >
+              <h2
+                class="block text-gray-950 text-2xl font-semibold font-raleway"
+              >
+                Select Your Seat
+              </h2>
+            </div>
+            <div class="p-8 bg-stone-100 rounded-xl mt-8">
+              <div
+                class="flex justify-between text-gray-950 text-base font-medium font-inter border-b-2 border-dashed border-gray-950 border-opacity-20 pb-4"
+              >
+                <div>
+                  Seat<span
+                    class="text-white text-xs font-bold font-inter bg-[#1DD100] px-2 rounded-md ms-1 absolute mt-1"
+                    >0</span
+                  >
+                </div>
+                <div>Class</div>
+                <div>Price</div>
+              </div>
+              <div class="py-4 border-b-2">
+                <div><span>C2 </span><span>Economoy </span><span>550</span></div>
+              </div>
+              <div
+                class="flex justify-between text-gray-950 text-base font-medium font-inter pb-4 pt-4"
+              >
+                <div>Total Price</div>
+                <div>BDT 1100</div>
+              </div>
+              <label
+                class="input rounded-xl px-5 flex items-center gap-2 border-0 h-fit"
+              >
+                <input
+                  type="text"
+                  class="grow text-gray-950 text-opacity-40 text-sm font-normal font-inter"
+                  placeholder="Have any copupon?"
+                />
+                <span
+                  class="badge badge-info px-4 py-5 my-3 mr-[-8px] rounded-lg text-white text-base font-semibold font-inter bg-[#1DD100]"
+                  >Apply</span
+                >
+              </label>
+              <div
+                class="flex justify-between text-gray-950 text-base font-medium font-inter pt-6"
+              >
+                <div>Grand Total</div>
+                <div>BDT 1100</div>
+              </div>
             </div>
           </div>
         </div>
