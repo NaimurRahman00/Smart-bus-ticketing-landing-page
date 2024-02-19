@@ -7,7 +7,9 @@ let grandTotalPrice = 0;
 let totalSeatBooked = 0;
 
 
+
 for (const passengerSeat of passengerSeatAll) {
+
     passengerSeat.addEventListener('click', function () {
         if (totalSeatBooked < 4) {
 
@@ -63,9 +65,11 @@ for (const passengerSeat of passengerSeatAll) {
             numberInput.addEventListener('keyup', function (e) {
                 const keyValue = e.target.value;
                 if (keyValue.length > 0) {
-                    nextButton.removeAttribute('disabled');
+                    nextButton.classList.remove('pointer-events-none', 'bg-stone-300', 'text-gray-400');
+                    nextButton.classList.add('bg-[#1DD100]', 'text-white');
                 } else {
-                    nextButton.setAttribute('disabled', true);
+                    nextButton.classList.remove('bg-[#1DD100]', 'text-white');
+                    nextButton.classList.add('pointer-events-none', 'bg-stone-300', 'text-gray-400');
                 }
             });
 
@@ -115,8 +119,8 @@ discountInput.addEventListener('keyup', function (e) {
             grandTotalTicketPrice.innerText = grandTotalPrice;
 
             // Show discount money
-            const discount1 = document.getElementById('discount-2');
-            discount1.classList.remove('hidden');
+            const discount2 = document.getElementById('discount-2');
+            discount2.classList.remove('hidden');
 
             // Hide discount input and button
             const discountForm = document.getElementById('discount-form');
@@ -130,10 +134,3 @@ discountInput.addEventListener('keyup', function (e) {
 
 });
 
-
-// Close modal
-const modal = document.getElementById('my_modal_1')
-const closeModal = document.getElementById('close-modal');
-closeModal.addEventListener('click', function(){
-    modal.classList.add('hidden');
-})
